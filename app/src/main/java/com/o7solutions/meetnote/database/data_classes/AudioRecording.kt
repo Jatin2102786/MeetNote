@@ -9,5 +9,6 @@ data class AudioRecording(
     val id: Long = 0L, // Primary key for the recording
     val fileName: String,
     val recordingPath: String, // Path to the audio file
-    val timestamp: Long // Timestamp when the recording was created
+    val timestamp: Long ,
+    val audioRecordingTime: Long// Timestamp when the recording was created
 )

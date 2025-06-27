@@ -18,7 +18,7 @@ data class TimedNote(
     @PrimaryKey(autoGenerate = true)
     val id: Long = 0L,
     @ColumnInfo(name = "recordingId")
-    val recordingId: Long,
+    var recordingId: Long,
     val timestampMs: Long,
     val noteText: String
 )

@@ -59,4 +59,11 @@ dependencies {
     implementation("androidx.room:room-runtime:2.7.2")
     kapt("androidx.room:room-compiler:2.7.2")
     implementation("androidx.room:room-ktx:2.7.2")
+
+
+//    View Pager
+//    implementation 'com.google.android.material:material:1.x.x' // Use the latest stable version
+    implementation("androidx.viewpager2:viewpager2:1.0.0") // Or the latest stable version
+    implementation("com.google.android.material:material:1.12.0") // Or the latest stable version
+    implementation("androidx.fragment:fragment-ktx:1.8.8") // For Kotlin extensions for Fragments
 }

@@ -28,4 +28,7 @@ interface AudioRecordingDao {
     @Transaction
     @Query("SELECT * FROM audio_recordings ORDER BY timestamp DESC")
     suspend fun getAllRecordingsWithNotes(): List<AudioRecordingWithNotes>
+
+    @Query("SELECT id FROM audio_recordings ORDER BY id DESC LIMIT 1")
+    suspend fun getLastItemId(): Long?
 }
