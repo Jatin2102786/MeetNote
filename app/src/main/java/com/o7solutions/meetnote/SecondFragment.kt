@@ -82,4 +82,6 @@ class SecondFragment : Fragment(), RecordAdapter.OnClick {
         bundle.putInt("id",recordList[position].id.toInt())
         findNavController().navigate(R.id.viewMeetFragment,bundle)
     }
+
+
 }

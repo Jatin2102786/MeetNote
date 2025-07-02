@@ -35,4 +35,19 @@
         android:name="com.o7solutions.meetnote.ui.ViewMeetFragment"
         android:label="View Recording"
         tools:layout="@layout/fragment_view_meet" />
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.o7solutions.meetnote.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/addMeetingFragment"
+        android:name="com.o7solutions.meetnote.ui.AddMeetingFragment"
+        android:label="Add Meeting"
+        tools:layout="@layout/fragment_add_meeting" />
+    <fragment
+        android:id="@+id/viewMeetingFragment"
+        android:name="com.o7solutions.meetnote.ui.ViewMeetingFragment"
+        android:label="fragment_view_meeting"
+        tools:layout="@layout/fragment_view_meeting" />
 </navigation>

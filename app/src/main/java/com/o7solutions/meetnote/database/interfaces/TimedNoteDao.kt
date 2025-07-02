@@ -11,7 +11,7 @@ interface TimedNoteDao {
     suspend fun insert(note: TimedNote)
 
     @Query("SELECT * FROM timed_notes WHERE recordingId = :recordingId ORDER BY timestampMs ASC")
-    suspend fun getNotesForRecording(recordingId: Long): List<TimedNote>
+    suspend fun getNotesForRecording(recordingId: Int): List<TimedNote>
 
     @Query("DELETE FROM timed_notes WHERE id = :noteId")
     suspend fun deleteNote(noteId: Long)

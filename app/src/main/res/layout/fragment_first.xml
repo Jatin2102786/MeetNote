@@ -59,6 +59,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/primary"
             android:layout_marginStart="4dp"
+            android:visibility="gone"
             android:text="Play"
             />
 
@@ -68,8 +69,9 @@
             android:id="@+id/save_button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/primary"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            style="@style/Widget.Material3.Button.OutlinedButton"
             android:text="Save"
             />
 
