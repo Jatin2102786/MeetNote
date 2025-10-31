@@ -169,15 +169,15 @@ class AddMeetingFragment : Fragment() {
         picker.show(childFragmentManager, "TIME_PICKER")
     }
 
-    private fun formatTime(hour: Int, minute: Int): String {
-        val df = DecimalFormat("00")
-        return when {
-            hour == 0 -> "12:${df.format(minute)} AM"
-            hour == 12 -> "12:${df.format(minute)} PM"
-            hour < 12 -> "$hour:${df.format(minute)} AM"
-            else -> "${hour - 12}:${df.format(minute)} PM"
+        private fun formatTime(hour: Int, minute: Int): String {
+            val df = DecimalFormat("00")
+            return when {
+                hour == 0 -> "12:${df.format(minute)} AM"
+                hour == 12 -> "12:${df.format(minute)} PM"
+                hour < 12 -> "$hour:${df.format(minute)} AM"
+                else -> "${hour - 12}:${df.format(minute)} PM"
+            }
         }
-    }
 
 
 //    fun showRecyclerDialog(context: Context, itemList: List<String>) {
